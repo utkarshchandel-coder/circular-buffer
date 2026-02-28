@@ -1,5 +1,4 @@
 # Circular Buffer in C
-
 ## Overview
 
 This project implements a **circular buffer (ring buffer)** in C, commonly used in embedded systems for efficient, non-blocking data handling.
