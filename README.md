@@ -1,18 +1,8 @@
-<<<<<<< HEAD
 # Circular Buffer in C
 
 ## 🔁 Why Circular Buffer in Embedded Systems?
 
 In embedded systems, data often arrives continuously (e.g., UART, CAN). Since dynamic memory allocation is avoided, a circular buffer allows efficient, fixed-size data storage with real-time performance and no memory fragmentation.
-=======
-# Circular Buffer in 
-
-## 🔁 Why Circular Buffer in Embedded Systems?
-
-In embedded systems, data often arrives continuously (e.g., UART, CAN). Since dynamic memory allocation is avoided, a circular buffer provides efficient, fixed-size data handling with real-time performance and no memory fragmentation.
-
----
->>>>>>> 376cc66 (Enhanced README: added system-level context and improved formatting)
 
 ## Overview
 
