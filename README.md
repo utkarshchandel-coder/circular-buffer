@@ -1,8 +1,18 @@
+<<<<<<< HEAD
 # Circular Buffer in C
 
 ## 🔁 Why Circular Buffer in Embedded Systems?
 
 In embedded systems, data often arrives continuously (e.g., UART, CAN). Since dynamic memory allocation is avoided, a circular buffer allows efficient, fixed-size data storage with real-time performance and no memory fragmentation.
+=======
+# Circular Buffer in 
+
+## 🔁 Why Circular Buffer in Embedded Systems?
+
+In embedded systems, data often arrives continuously (e.g., UART, CAN). Since dynamic memory allocation is avoided, a circular buffer provides efficient, fixed-size data handling with real-time performance and no memory fragmentation.
+
+---
+>>>>>>> 376cc66 (Enhanced README: added system-level context and improved formatting)
 
 ## Overview
 
@@ -27,7 +37,7 @@ It supports safe data insertion and retrieval using **wrap-around logic** and **
 
 * `write_index` → points to where new data is written
 * `read_index` → points to where data is read
-* When index reaches end → wraps using `% BUFFER_SIZE`
+* When index reaches the buffer limit, it wraps around to the beginning using modulo operation (% BUFFER_SIZE), ensuring continuous reuse of memory.
 
 ---
 
@@ -43,7 +53,16 @@ Data: 20
 * `circular_buffer.h` → Structure, macros, and function declarations
 * `circular_buffer.c` → Implementation
 * `main.c` → Test program
+---
 
+## 📚 API Summary
+
+void cbuffer_initialize(CircularBuffer *cbuffer);
+int cbuffer_put(CircularBuffer *cbuffer, uint8_t data);
+int cbuffer_get(CircularBuffer *cbuffer, uint8_t *data);
+int cbuffer_is_full(CircularBuffer *cbuffer);
+int cbuffer_is_empty(CircularBuffer *cbuffer);
+int cbuffer_data_available(CircularBuffer *cbuffer);
 ---
 
 ## Key Functions
