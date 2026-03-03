@@ -47,6 +47,7 @@ Data: 20
 
 ## 📚 API Summary
 
+```c
 void cbuffer_initialize(CircularBuffer *cbuffer);
 
 int cbuffer_put(CircularBuffer *cbuffer, uint8_t data);
