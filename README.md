@@ -59,7 +59,7 @@ int cbuffer_is_full(CircularBuffer *cbuffer);
 int cbuffer_is_empty(CircularBuffer *cbuffer);
 
 int cbuffer_data_available(CircularBuffer *cbuffer);
-
+```
 ---
 
 ## Key Functions
