@@ -1,4 +1,9 @@
 # Circular Buffer in C
+
+## 🔁 Why Circular Buffer in Embedded Systems?
+
+In embedded systems, data often arrives continuously (e.g., UART, CAN). Since dynamic memory allocation is avoided, a circular buffer allows efficient, fixed-size data storage with real-time performance and no memory fragmentation.
+
 ## Overview
 
 This project implements a **circular buffer (ring buffer)** in C, commonly used in embedded systems for efficient, non-blocking data handling.
