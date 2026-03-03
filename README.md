@@ -48,11 +48,17 @@ Data: 20
 ## 📚 API Summary
 
 void cbuffer_initialize(CircularBuffer *cbuffer);
+
 int cbuffer_put(CircularBuffer *cbuffer, uint8_t data);
+
 int cbuffer_get(CircularBuffer *cbuffer, uint8_t *data);
+
 int cbuffer_is_full(CircularBuffer *cbuffer);
+
 int cbuffer_is_empty(CircularBuffer *cbuffer);
+
 int cbuffer_data_available(CircularBuffer *cbuffer);
+
 ---
 
 ## Key Functions
